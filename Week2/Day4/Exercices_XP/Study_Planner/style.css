@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2d46;
+    background-color: #ffffff;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #172b4d;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.planner-section {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.planner-section h2 {
+    background-color: #dceeff;
+    padding: 10px;
+    margin-top: 0;
+    color: #1f2d46;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dceeff;
+}
+
+.checklist-item {
+    margin-bottom: 8px;
+}
+
+.checklist-item label {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+}
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
