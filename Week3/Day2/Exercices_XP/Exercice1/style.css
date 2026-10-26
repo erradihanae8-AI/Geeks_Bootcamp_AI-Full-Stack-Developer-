@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+article {
+    max-width: 700px;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Animation for the second paragraph */
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
