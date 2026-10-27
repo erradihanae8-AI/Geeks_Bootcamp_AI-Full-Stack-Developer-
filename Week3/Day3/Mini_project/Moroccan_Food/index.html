@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trésors de la cuisine marocaine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="brand">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa5zkDfZjiDlz8tmY4JYYzFul6pdlPpuDFG7rjmnxz4g&s=10" alt="Logo Trésors de la cuisine marocaine">
+    <h1>Trésors de la cuisine marocaine</h1>
+</div>
+        <p>Découvrez les saveurs authentiques du Maroc</p>
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Rechercher un plat marocain..."
+            aria-label="Rechercher un plat marocain"
+        >
+    </header>
+
+    <main>
+       
+        <section class="hero">
+            <h2>Un voyage au cœur des saveurs marocaines</h2>
+            <p>
+                Explorez les recettes traditionnelles, découvrez leurs histoires
+                et célébrez la richesse du patrimoine culinaire marocain.
+            </p>
+        </section>
+
+        <section class="catalog-controls">
+            <h2>Explorez nos recettes</h2>
+
+            <div id="categoryFilters" class="category-filters">
+                <button class="filter-btn active" data-category="all">
+                    Toutes les recettes
+                </button>
+
+                <button class="filter-btn" data-category="Plat principal">
+                    Plats principaux
+                </button>
+
+                <button class="filter-btn" data-category="Soupe">
+                    Soupes
+                </button>
+
+                <button class="filter-btn" data-category="Entrée">
+                    Entrées
+                </button>
+
+                <button class="filter-btn" data-category="Dessert">
+                    Desserts
+                </button>
+
+                <button class="filter-btn" data-category="Boisson">
+                    Boissons
+                </button>
+
+                <button class="filter-btn" data-category="Petit-déjeuner">
+                    Petits-déjeuners
+                </button>
+            </div>
+
+            <label for="sortSelect">Trier les recettes :</label>
+
+            <select id="sortSelect">
+                <option value="default">Ordre par défaut</option>
+                <option value="title">Nom (A–Z)</option>
+                <option value="time">Temps de préparation</option>
+            </select>
+        </section>
+
+        
+        <section class="recipes-section" aria-label="Recettes marocaines">
+            <div id="recipesGrid" class="recipes-grid"></div>
+
+            <p id="emptyMessage" hidden>
+                Aucune recette trouvée. Essayez une autre recherche.
+            </p>
+        </section>
+
+        <section class="favorites-section">
+            <h2>  Mes recettes favorites</h2>
+            <div id="favoritesGrid" class="recipes-grid"></div>
+        </section>
+    </main>
+
+    <div id="recipeModal" class="modal" aria-hidden="true">
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+            <button
+                id="closeModal"
+                class="close-btn"
+                aria-label="Fermer les détails"
+            >&times;</button>
+
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Un hommage aux saveurs et aux traditions du Maroc.</p>
+    </footer>
+
+</body>
+</html>
