@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <title> Exercice 3</title>
+    </head>
+<body>
+    <script >
+    const users = { user1: 18273, user2: 92833, user3: 90315 }
+    const usersArray = Object.entries(users);
+
+    const doubledUsers = usersArray.map(([user, id]) => {
+    return [user, id * 2];
+});
+
+console.log(doubledUsers);
+    </script>
+</body>
+</html>
