@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #9e43b1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #6045a5;
+    margin-bottom: 15px;
+}
+
+.player-section {
+    margin: 25px 0;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 18px;
+    background: #6747b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background: #4d3294;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#emoji {
+    font-size: 100px;
+    margin: 25px;
+}
+
+#options {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #eee9ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#feedback {
+    font-weight: bold;
+    margin: 15px;
+}
+
+.leaderboard {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.leaderboard h2 {
+    text-align: center;
+    color: #6045a5;
+}
+
+.leaderboard li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+[hidden] {
+    display: none !important;
+}
