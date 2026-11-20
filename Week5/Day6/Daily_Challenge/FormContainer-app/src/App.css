@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+.form-container {
+    background-color: #D9B48A;
+    padding-bottom: 20px;
+}
+
+.form-container h1 {
+    background-color: #3A2E2E;
+    color: white;
+    margin: 0;
+    padding: 12px 15px;
+    font-size: 24px;
+}
+
+.form-container form {
+    padding: 10px 15px;
+}
+
+.form-container input[type="text"],
+.form-container input:not([type="radio"]):not([type="checkbox"]) {
+    width: 60%;
+    padding: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #333;
+    font-size: 13px;
+}
+
+.form-container label {
+    font-size: 13px;
+}
+
+.form-container select {
+    margin: 5px 0 15px 0;
+    font-size: 13px;
+}
+
+.form-container button {
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #999;
+    background-color: #eee;
+}
+
+.entered-info {
+    background-color: #0E5A5B;
+    color: white;
+    padding: 15px;
+    margin-top: 5px;
+    min-height: 300px;
+}
+
+.entered-info h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.entered-info p {
+    font-style: italic;
+    font-size: 14px;
+    margin: 18px 0;
+}
+.form-container,
+.entered-info {
+    text-align: left;
+}
