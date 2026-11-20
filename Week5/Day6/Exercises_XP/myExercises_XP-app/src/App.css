@@ -1,0 +1,36 @@
+
+.App {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #277653;
+}
+
+h2 {
+  cursor: pointer;
+  color: #c94f35;
+  font-size: 30px;
+}
+
+h2:hover {
+  color: #277653;
+}
+
+.error-container {
+  background-color: #ffe5e5;
+  color: #c0392b;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #e74c3c;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+details {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 12px;
+}
