@@ -1,0 +1,19 @@
+ Exercise 3 – Test Server Validation
+
+**Test 1: Empty message**
+
+- Input: `{"message": ""}`
+- Actual result: HTTP 400 BAD REQUEST.
+- Response: `{"error": "Message is required"}`
+- Status: PASS.
+
+**Test 2: Invalid message type**
+
+- Input: `{"message": 123}`
+- Actual result: HTTP 400 BAD REQUEST.
+- Response: `{"error": "Message must be a string"}`
+- Status: PASS.
+
+**Conclusion:**
+
+Both tests passed successfully. The Flask server correctly validates incoming data, rejects empty messages, and prevents invalid data types from being processed.

@@ -1,0 +1,29 @@
+Exercise 4 – Test Service Failure
+
+# Test 1: Flask Server Stopped
+
+**Action:** I stopped the Flask server using `CTRL + C` and submitted a message from the React interface.
+
+**Result:**
+- React displayed an error message: "Unable to connect to the Flask server."
+- The loading state stopped correctly.
+- The interface remained responsive.
+
+**Status:** PASS
+
+# Test 2: Flask Server Restarted
+
+**Action:** I restarted the Flask server using `python app.py` and submitted another message from React.
+
+**Result:**
+- React successfully connected to Flask.
+- The server returned a response: "Your message is valid!"
+- The loading state stopped correctly.
+
+**Status:** PASS
+
+# Conclusion
+
+The React application correctly handles server failures. When the Flask server is unavailable, React displays an error message and exits the loading state. After restarting Flask, the application works normally again.
+
+This exercise demonstrates the importance of error handling using `try`, `catch`, and `finally` in React.

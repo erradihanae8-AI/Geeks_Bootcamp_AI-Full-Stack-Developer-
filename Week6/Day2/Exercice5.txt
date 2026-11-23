@@ -1,0 +1,33 @@
+#Exercise 5 – Check Memory
+
+Test
+
+First, I submitted:
+
+`My order number is A104.`
+
+Then, I submitted:
+
+`What is my order number?`
+
+# Observation
+
+The chatbot does not remember my previous message. It cannot identify my order number because each request is processed independently.
+
+# Explanation
+
+In the React code, the `fetch()` function sends only the current message to the Flask backend:
+
+```javascript
+body: JSON.stringify({ message })
+```
+
+In the Flask backend, `request.get_json()` retrieves the current request data only.
+
+There is no conversation history or memory mechanism to store previous messages.
+
+# Conclusion
+
+The chatbot is stateless. Each request is independent, so the second request does not include the first message.
+
+To make the chatbot remember previous messages, we need to implement a conversation history or memory system.   

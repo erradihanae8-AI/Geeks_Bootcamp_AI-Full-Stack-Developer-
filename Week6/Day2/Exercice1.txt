@@ -1,0 +1,29 @@
+ Exercise 1 – Compare Instructions
+
+# Before changing the system prompt
+
+I submitted the question:
+
+"What is your refund policy?"
+
+The chatbot could generate a general answer and might invent a refund policy that was not provided.
+
+### After changing the system prompt
+
+I submitted the same question again.
+
+The chatbot gave a shorter and clearer answer. It did not invent a company refund policy and explained that it needed more information.
+
+# Comparison
+
+Before the change, the chatbot was less restricted and could provide unsupported information.
+
+After the change, the chatbot followed the new instructions:
+- Short answers.
+- Simple language.
+- Clarification questions when necessary.
+- No invented company policies.
+
+# Conclusion
+
+Changing the system prompt improves the chatbot's response quality and reliability. It helps prevent incorrect information and makes responses clearer and safer.
